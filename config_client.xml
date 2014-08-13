@@ -1,0 +1,17 @@
+<br.com.ln.lnintegracao.ConfigClient>
+  <minimumLoopTime>2000</minimumLoopTime>
+  <maxmumLoopTime>10000</maxmumLoopTime>
+  <maxmumOldFileDays>90</maxmumOldFileDays>
+  <maxmumOldFileDaysLogs>30</maxmumOldFileDaysLogs>
+  <smbDomain></smbDomain>
+  <smbUser></smbUser>
+  <smbPassword></smbPassword>
+  <nameDirIn>C:\Users\f12684146896\Documents\NetBeansProjects\LnIntegracao/DIR_ENTRADA</nameDirIn>
+  <nameDirReturn>C:\Users\f12684146896\Documents\NetBeansProjects\LnIntegracao/DIR_RETORNO</nameDirReturn>
+  <pathRoot>C:\Users\f12684146896\Documents\NetBeansProjects\LnIntegracao/</pathRoot>
+  <nameDirBackUpOkay>DIR_BACKUPOKAY</nameDirBackUpOkay>
+  <nameDirBackUpError>DIR_BACKUPERRO</nameDirBackUpError>
+  <strDbName>SQLSERVER</strDbName>
+  <maxSize>2</maxSize>
+  <termination></termination>
+</br.com.ln.lnintegracao.ConfigClient>
