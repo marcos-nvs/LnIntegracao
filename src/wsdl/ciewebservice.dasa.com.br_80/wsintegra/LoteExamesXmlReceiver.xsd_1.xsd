@@ -1,34 +1,70 @@
-<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://wservice.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://wservice.com.br/">
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://wservice.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://wservice.com.br/">
 
-<xs:element name="recebeLote" type="tns:recebeLote" />
+<xs:element name="recebeLote" type="tns:recebeLote"/>
 
-<xs:element name="recebeLoteResponse" type="tns:recebeLoteResponse" />
+<xs:element name="recebeLoteResponse" type="tns:recebeLoteResponse"/>
 
-<xs:element name="solicitacaoExames" type="tns:solicitacaoExames" />
+<xs:element name="setRb" type="tns:setRb"/>
 
-<xs:element name="solicitacaoExamesResponse" type="tns:solicitacaoExamesResponse" />
+<xs:element name="setRbResponse" type="tns:setRbResponse"/>
 
-<xs:complexType name="solicitacaoExames">
-<xs:sequence>
-<xs:element name="xml" type="xs:string" minOccurs="0" />
-</xs:sequence>
-</xs:complexType>
+<xs:element name="solicitacaoExameMV" type="tns:solicitacaoExameMV"/>
 
-<xs:complexType name="solicitacaoExamesResponse">
-<xs:sequence>
-<xs:element name="return" type="xs:string" minOccurs="0" />
-</xs:sequence>
-</xs:complexType>
+<xs:element name="solicitacaoExameMVResponse" type="tns:solicitacaoExameMVResponse"/>
+
+<xs:element name="solicitacaoExames" type="tns:solicitacaoExames"/>
+
+<xs:element name="solicitacaoExamesResponse" type="tns:solicitacaoExamesResponse"/>
 
 <xs:complexType name="recebeLote">
 <xs:sequence>
-<xs:element name="xml" type="xs:string" minOccurs="0" />
+<xs:element name="xml" type="xs:string" minOccurs="0"/>
 </xs:sequence>
 </xs:complexType>
 
 <xs:complexType name="recebeLoteResponse">
 <xs:sequence>
-<xs:element name="return" type="xs:string" minOccurs="0" />
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setRb">
+<xs:sequence>
+<xs:element name="arg0" type="tns:reachBlocker" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="reachBlocker">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="setRbResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="solicitacaoExames">
+<xs:sequence>
+<xs:element name="xml" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="solicitacaoExamesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="solicitacaoExameMV">
+<xs:sequence>
+<xs:element name="usuario" type="xs:string" minOccurs="0"/>
+<xs:element name="senha" type="xs:string" minOccurs="0"/>
+<xs:element name="xml" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="solicitacaoExameMVResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
 </xs:sequence>
 </xs:complexType>
 </xs:schema>

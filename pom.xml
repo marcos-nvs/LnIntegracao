@@ -10,6 +10,19 @@
     <name>LnIntegracao</name>
     <url>http://maven.apache.org</url>
     <build>
+        <resources>
+            <resource>
+                <targetPath>META-INF</targetPath>
+                <directory>src</directory>
+                <includes>
+                    <include>jax-ws-catalog.xml</include>
+                    <include>wsdl/**</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -34,6 +47,9 @@
                                 <wsdlFile>ciewebservice.dasa.com.br/wsintegra/LoteExamesXmlReceiver.wsdl</wsdlFile>
                             </wsdlFiles>
                             <packageName></packageName>
+                            <vmArgs>
+                                <vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
+                            </vmArgs>
                             <wsdlLocation>http://ciewebservice.dasa.com.br/wsintegra/LoteExamesXmlReceiver?wsdl</wsdlLocation>
                             <staleFile>${project.build.directory}/jaxws/stale/LoteExamesXmlReceiver.stale</staleFile>
                         </configuration>

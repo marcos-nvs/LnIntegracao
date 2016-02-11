@@ -1,12 +1,8 @@
 
 import br.com.ln.entities.AgendaExa;
 import br.com.ln.entities.AgendaExaMaster;
-import br.com.ln.hibernate.utils.SessionLNHelper;
 import br.com.ln.lnintegracao.InformacaoSistemaTMLAB;
 import java.util.List;
-import org.hibernate.Query;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
 
 
 /*
